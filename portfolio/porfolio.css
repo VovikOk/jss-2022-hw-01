@@ -1,0 +1,223 @@
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.section_center{
+    margin: 0 13%;   
+    background: #FFFFFF;   
+}
+
+.section_center_filter{
+   text-align: center; 
+   padding-top: 94px;
+   padding-bottom: 50px;   
+}
+.section_center_filter input{
+    opacity: 0;/*скриваємо радіокнопку*/
+    width: 0px;
+    margin: 0;
+}
+.section_center_filter label{
+    margin-right: 8px;
+    padding: 6px 22px;
+    background: #F5F4FA; 
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+/*зв'язуємо радіокнопку з label*/
+#amontChoice1:checked ~ .choice1,
+#amontChoice2:checked ~ .choice2,
+#amontChoice3:checked ~ .choice3,
+#amontChoice4:checked ~ .choice4,
+#amontChoice5:checked ~ .choice5{
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+/* зв'язуємо радіокнопку з div, окремі вкладки
+#amontChoice2:checked ~ .all .web,
+#amontChoice3:checked ~ .all .applications,
+#amontChoice4:checked ~ .all .design,
+#amontChoice5:checked ~ .all .marketing{ 
+   height: 100%;
+   display: block;
+}
+
+.filter{
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    display: none;
+}*/
+
+.all{  
+    width: 100%;
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.box{
+    position: relative;
+    /* width: 31%;*/
+    /*ширина контейнера - значення всіх відступів / на кількістьел в рядку*/
+    width: calc((100% - 2*30px)/3);
+    border: #EEEEEE solid 1px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/*для кожного 3-го елемента*/
+.box:nth-child(3n) {
+    margin-right: 0;
+}
+.box_img{    
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    display: block;
+}
+
+.all_box_title h2{
+    margin: 20px 0 4px 24px;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 36px;    
+    letter-spacing: 0.06em;    
+    color: #212121;
+    text-align: left;
+    font-family: 'Roboto';
+
+}
+.all_box_title p{
+    margin: 0 0 0 24px;    
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    text-align: left;
+    padding-bottom: 20px;
+    
+}
+.boxFonNone {  
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;       
+    background: rgba(33, 150, 243, 0.9);   
+    display: none;
+}
+
+.boxFon {   
+    display: block;     
+    height: 75%;
+}
+
+.boxText{    
+    margin: 0 auto;
+    /* width: calc((100% - 2*24px)/1);*/
+    width: 100%;
+    height: 100%;  
+    text-align: left;      
+    vertical-align: middle;     
+}
+
+.boxText p{   
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 17% 5%;
+    height: 100%;
+}
+
+@media (max-width: 1460px) {
+    .all_box_title h2 {
+        font-size: 1em;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1320px) {
+    .all_box_title h2 {
+        font-size: 0.8em; 
+    }
+}
+@media (max-width: 1200px) {
+    .section_center {
+        margin: 0 6%;        
+    }
+    .boxText p {                   
+        font-size: 1em;
+        line-height: 26px;         
+    }
+}
+@media (max-width: 1000px) {
+    .section_center {
+        margin: 0 2%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .section_center {
+         margin: 0 2%;           
+    }
+    .section_center_filter{        
+        padding-top: 60px;
+        padding-bottom: 30px;   
+    }
+    .all{
+         margin-top: 14px; 
+    } 
+    .box{       
+        /*ширина контейнера - значення всіх відступів / на кількістьел в рядку*/
+        width: calc((100% - 30px)/2);         
+    }
+    .box:nth-child(n) {
+        margin-right: 30px;
+    }
+        /*для кожного 2-го елемента*/
+    .box:nth-child(2n) {
+        margin-right: 0;
+    }    
+    .all_box_title h2 {
+        font-size: 1.125em;
+        line-height: 36px;
+        margin-top: 20px;
+    }
+    .boxText p {
+        font-size: 1.125em;
+        line-height: 30px;
+    }
+}
+@media (max-width: 630px) {
+    .section_center_filter {
+        text-align: left;
+        padding-top: 60px;
+        padding-bottom: 0px;       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }    
+    .section_center_filter label {
+        margin-top: 15px;       
+    }
+    .all {
+        margin-top: 40px;
+    }
+    .box{       
+        /*ширина контейнера - значення всіх відступів / на кількістьел в рядку*/
+        width: 100%;         
+    }
+    .box:nth-child(n) {
+        margin-right: 0px;        
+    }
+
+}

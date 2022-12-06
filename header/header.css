@@ -1,0 +1,368 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:antiquewhite;
+    font-size: medium;
+    font-family: 'Roboto';
+    font-style: normal;
+   
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: comfortaa;
+    margin: 0;
+}
+
+.top_section {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;    
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.header_centre {
+    margin: 0 13.5%;
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+   /* justify-content: space-between;*/
+    /*grid-template-columns: 22.5% 23.5% 54%;*/
+}
+header  {
+    border-bottom: 1px solid #ECECEC;    
+}
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header_logo h1 {
+    margin: 24px 0 25px 0;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.625em;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.header_logo_h1_span {
+    color: #2196F3;
+}
+
+.header_menu_nav {
+    margin: 0 0 0 7.9%;
+    display: flex;
+    flex-direction: row;    
+}
+
+.header_menu_nav a {
+    padding: 32px 0 28px 0;
+    margin-right: 50px;    
+    border-bottom-width: 4px;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: inline-block;
+}
+.header_menu_nav a:last-child {
+    margin-right: 0px;
+}
+.header_menu_nav a:hover {
+    color: #2196F3;
+    border-bottom: 4px solid #2196F3;
+}
+
+.header_menu_nav a:focus {
+    color: #2196F3;
+    border-bottom: 4px solid #2196F3;
+}
+
+.active{
+    color: #2196F3;
+    border-bottom: 4px solid #2196F3;
+}
+
+.header_contacs_nav {
+    text-align: right;
+    /*текст з права */
+    flex-grow: 2;
+}
+
+.header_contacs_nav a {
+    padding: 32px 0 32px 0;
+    color: #757575;
+    margin-left: 30px;
+    display: inline-block;
+}
+.header_contacs_nav a:first-child {
+    margin-left: 0px;
+}
+
+.header_contacs_nav img {
+    margin-right: 10px;
+}
+
+.header_contacs_nav a:hover {
+    color: #2196F3;
+}
+
+.header_contacs_nav a:focus {
+    color: #2196F3;
+}
+
+
+/**/
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+ /* скрываем чекбокс */
+ #burger_toggle {
+     opacity: 0;
+}
+
+ /* стилизуем кнопку */
+.burger_btn {
+     display: flex;
+     /* используем flex для центрирования содержимого */
+     align-items: center;
+     /* центрируем содержимое кнопки */
+     position: absolute;
+     top: 22px;
+     right: 23px;
+     /*left: 90%;*/
+     width: 24px;
+     height: 16px;
+     cursor: pointer;
+     z-index: 20;
+}
+
+ /* добавляем "гамбургер" */
+.burger_btn>span,
+.burger_btn>span::before,
+.burger_btn>span::after {
+     display: block;
+     position: absolute;
+     width: 24px;
+     height: 3px;
+     background-color: #000000;
+}
+
+.burger_btn>span::before {
+     content: '';
+     top: -8px;
+}
+
+.burger_btn>span::after {
+     content: '';
+     top: 8px;
+}
+
+ /*хрестик кнопки close*/
+#burger_toggle:checked~.burger_btn>span {
+     transform: rotate(45deg);
+}
+
+#burger_toggle:checked~.burger_btn>span::before {
+     top: 0;
+     transform: rotate(0);
+}
+
+#burger_toggle:checked~.burger_btn>span::after {
+     top: 0;
+     transform: rotate(90deg);
+}
+
+#burger_toggle:checked~.burger_box {
+     visibility:visible ;
+}
+
+ /* контейнер меню */
+.burger_box {
+     display: block;
+     position: absolute;
+     visibility: hidden;
+     top: -40px;
+     left: 0;
+     width: 100%;
+     height: 1000px;
+     margin: 40px 0 0 0;
+     padding: 10px 0;
+     list-style: none;
+     /*text-align: center;*/
+     background-color: #ffffff;
+     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+     z-index: 12;
+     padding-left: 40px;
+     font-weight: 500;
+     letter-spacing: 0.02em;
+}
+.burger_menu_nav{
+    display: flex;
+    flex-direction: column;    
+    font-size: 40px;
+    line-height: 47px;    
+}
+.burger_menu_nav a:first-child {
+    margin-top: 48px;
+}
+.burger_menu_nav a:nth-child(2){
+    margin-top: 37.51px;
+    margin-bottom: 32px;
+}
+.burger_menu_nav a:last-child {
+    margin-bottom: 302px;
+}
+.burger_contacs_nav{
+    display: flex;
+    flex-direction: column;    
+    font-size: 24px;
+    line-height: 28px;   
+    color: #757575;
+}
+.burger_contacs_nav a:nth-child(2) {
+    margin-top: 32px;
+    margin-bottom: 64px;    
+}
+.burger_box a:hover {
+    color: #2196F3;
+}
+.burger_box a:focus {
+    color: #2196F3;
+}
+.burger_social_nav{
+    display: flex;
+    flex-direction: row;    
+    font-size: 18px;
+    line-height: 22px;   
+    color: #757575;
+}
+hr {
+    width: 1px;
+    height: 22px;
+    margin: 0 10px;
+    color: rgba(33, 33, 33, 0.2);;
+}
+
+
+ /*медиозапросы*/
+
+@media (max-width: 1200px) {
+    body {
+        max-width: 1200px;            
+    }
+    .header_centre {
+        margin: 0 6%;
+        width: 88%;
+    }
+
+}
+@media (max-width: 1000px) {
+    body {
+        max-width: 1000px;            
+    }
+    .header_centre {
+        margin: 0 2%;
+        width: 96%;
+    }
+
+}
+@media (max-width: 930px) {
+    body{
+        max-width: 930px;
+        font-size:small;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+        font-size: medium;
+    }  
+    .top_section {        
+        width: 100%;
+    }
+    .header_logo h1 {
+        margin: 26px 0;       
+        font-size: 1.5em;
+        line-height: 28px;        
+    }
+    .header_centre {
+        margin: 0 2%;
+        width: 96%;     
+    }
+    .header_menu_nav {
+        margin: 0 0 0 11.8%;
+        flex-grow: 50;
+    } 
+    .header_contacs_nav {
+        display: flex;
+        flex-direction: column;
+        margin: 21px 0 11px 0;
+        text-align: left;
+    }
+    .header_contacs_nav a {
+        padding: 0 0 10px 0;        
+        margin-left: 0px;
+        font-size: 0.75em;
+        line-height: 14px;
+    } 
+}
+@media (max-width: 650px) {
+    body {
+        max-width: 650px;        
+    }
+    .header_menu_nav{
+        margin-left: 8%;
+    }
+    .header_menu_nav a{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 550px) {
+    body {
+        max-width: 550px;
+    }
+    .header_menu_nav {
+        margin-left: 2%;
+    }
+    .header_menu_nav a {
+        margin-right: 8px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        max-width: 480px;
+        /*font-size: small;*/
+    }
+    .header_menu_nav, .header_contacs_nav{
+        display: none;
+    }
+    .header_centre {
+        margin: 0 3%;
+        width: 94%;
+    }
+    .header_logo h1 {     
+        margin: 16px 0;
+    }
+    .burger-menu{
+        display: block;
+    }    
+}

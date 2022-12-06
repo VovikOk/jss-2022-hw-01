@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <title>desktop_petstory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header/header.css" />    
+    <link rel="stylesheet" href="portfolio/porfolio.css" />
+    <link rel="stylesheet" href="footer/footer.css" />
+    <link rel="stylesheet" href="modal/modal.css" />
+</head>
+
+<body>
+    <section class="top_section" >
+        <header>
+            <div class="header_centre">
+                <div class="header_logo">
+                    <h1><a href="#"><span class="header_logo_h1_span">Web</span>Studio</a></h1>
+                </div>            
+                <nav class="header_menu_nav" id="menu_nav">
+                    <a id="studio" href="index.html">Студія</a>
+                    <a id="portfolio" href="#">Портфоліо</a>
+                    <a href="">Контакти</a>
+                </nav>         
+                <nav class="header_contacs_nav">
+                    <a id="header_mailto" class="header_mail" href="mailto:"> <img id="header_mail_img" src="icons/envelope.png" alt="info@devstudio.com"> info@devstudio.com</a>
+                    <a id="header_phone" class="header_telephone" href="tel:"> <img id="header_phone_img"src="icons/smartphone.png" alt="+38 096 111 11 11"> +38 096 111 11 11</a>
+                </nav> 
+            </div>
+            <div class="burger-menu">
+                <input id="burger_toggle" type="checkbox" />
+                <label class="burger_btn" for="burger_toggle">
+                    <span></span>
+                </label>
+                <ul class="burger_box" id="burgerBox">
+                    <nav class="burger_menu_nav" id="menu_nav">
+                        <a id="studio" href="index.html">Студія</a>
+                        <a id="portfolio" href="#">Портфоліо</a>
+                        <a href="">Контакти</a>
+                    </nav>
+                    <nav class="burger_contacs_nav">
+                        <a id="header_phone" class="header_telephone" href="tel:"> +38 096 111 11 11</a>
+                        <a id="burger_mailto" class="header_mail" href=""> info@devstudio.com</a>
+                    </nav>
+                    <nav class="burger_social_nav">
+                        <li><a class="burger_instagram" href="https://www.instagram.com/">instagram</a></li>
+                        <hr>
+                        <li><a class="burger_twitter" href="https://twitter.com/">twitter</a></li>
+                        <hr>
+                        <li><a class="burger_facebook" href="https://www.facebook.com/">facebook</a></li>
+                        <hr>
+                        <li><a class="burger_linkedin" href="https://www.linkedin.com/">linkedin</a></li>
+                    </nav>
+                </ul>
+            </div>
+        </header>
+
+        <section class="section_center">            
+                <div class="section_center_filter" id='pick_prog' >
+                    <input type="radio" onclick="allFilter()" name="amont" id="amontChoice1" checked>      
+                    <label for="amontChoice1" class="choice1">Усі</label> 
+
+                    <input  type="radio" onclick="strFilter('Веб-сайти')" name="amont" id="amontChoice2" > 
+                    <label for="amontChoice2" class="choice2">Веб-сайти</label> 
+
+                    <input  type="radio" onclick="strFilter('Додатки')" name="amont" id="amontChoice3" > 
+                    <label for="amontChoice3" class="choice3">Додатки</label>                    
+
+                    <input  type="radio" onclick="strFilter('Дизайн')" name="amont" id="amontChoice4" >
+                    <label for="amontChoice4" class="choice4">Дизайн</label>
+
+                    <input  type="radio" onclick="strFilter('Маркетинг')" name="amont" id="amontChoice5" >
+                    <label for="amontChoice5" class="choice5">Маркетинг</label>                 
+                  
+                    <section class="all " id="al"></section>        
+                </div>                                             
+        </section>        
+
+        <footer>
+            <div class="foter_top">
+                <div class="header_logo">
+                    <h1><a href="#"><span class="header_logo_h1_span">Web</span>Studio</a></h1>
+                    <ul class="footer_adress">
+                        <li><p>м. Київ, пр-т Лесі Українки, 26</p></li>
+                        <li><a class="telephone" href="tel:">+38 096 111 11 11</a></li>
+                        <li><a class="mail" href="mailto:">info@devstudio.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer_center">
+                    <span class="footer_center_span">приєднуйтесь</span>
+                    <nav class="section_team_box_car_nav">
+                        <li><a class="instagram" href="https://www.instagram.com/"><img id="instagram" src="icons/Ellipse1.png" alt="instagram"></a></li>  
+                        <li><a class="twitter" href="https://twitter.com/"><img id="twitter" src="icons/Ellipse2.png" alt="twitter"></a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/"><img id="facebook" src="icons/Ellipse3.png" alt="facebook"></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/"><img id="linkedin" src="icons/Ellipse4.png" alt="linkedin"></a></li>
+                    </nav>
+                </div>
+                <div class="footer_right">
+                    <div class="footer_right_input">
+                    <p>Підпишіться на розсилку</p>
+                        <div class="footer_right_input_buttom">
+                            <input type="email" id="footer_email" class="footer_inpyt" placeholder="E-mail">
+                            <button class="footer_button" id="footer_but"><div><span>Підписатися</span><img src="icons/icon send.png" alt=""></div> </button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="modalWindow"></div>
+        <form action="" id="top_form" method="post">
+            <fieldset>
+                <button id="modal_button" class="modal_button">
+                    <img id="modal_img" class="modal_button_close" src="icons/close-black-18dp (1) 1.png" width="18px" height="18px" alt="mail">
+                </button>
+                <p>Залиште свої дані, ми вам передзвонимо</p>
+                <section class="form_section" id="formSection">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="inputName" name="name">
+                    <img id="inputImg" class="form_name" src="icons/person-black-18dp1.png" width="18px" height="18px" alt="name">
+                    <label for="phone">Телефон</label>
+                    <input id="inputPhone" type="text" name="phone">
+                    <img class="form_phone" src="icons/phone-black-18dp 1.png" width="18px" height="18px" alt="phone">
+                    <label for="mail">Пошта</label>
+                    <input id="inputMail" type="text" name="mail">
+                    <img class="form_mail" src="icons/email-black-18dp 1.png" width="18px" height="18px" alt="mail">
+                    <label for="comment">Коментар</label>
+                    <textarea id="textareaText" type="text" name="comment">Введіть текст</textarea>
+                </section>
+                <div class="formCheckbox">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                </div>
+                <button class="formButton">Відправити</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+<script src='header/header.js'></script>
+<script src='portfolio/portfolio.js'></script>
+<script src='footer/footer.js'></script>
+<script src='modal/modal.js'></script>
+
+
+</html>

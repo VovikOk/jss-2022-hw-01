@@ -1,0 +1,460 @@
+
+
+/**/
+
+.top_section{
+    position: relative;
+}
+.section_servise{    
+    position: relative;
+    width: 100%;    
+    display: flex;   
+    flex-direction: column;
+    align-items: center;    
+}
+
+.section_servise img{   
+    filter: brightness(70%); /*затемнення фону*/
+    position: relative;   
+    top: 0;
+    left: 0;
+    width: 100%;  
+}
+.section_servise_span{
+    /*margin: 0 28% 0 28%;  */
+    width: 700px;
+    position: absolute; 
+    bottom: 46.7%;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;     
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;    
+    color: #FFFFFF;    
+}
+.section_servise_button{
+    position: absolute;
+    bottom: 33.3%;
+    width: 216px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;    
+    letter-spacing: 0.06em;
+    color: #FFFFFF; 
+}
+.section_servise_button:active{
+    background: #188CE8;    
+}
+
+/**/
+.section_features{
+    margin: 94px 13% 0 13%;
+    width: 74%;
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section_features_item{
+    width: 23%;
+}
+.section_features_item_icon{
+    margin-bottom: 30px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    text-align: center;    
+}
+.section_features_item_icon img{
+    margin-top: 25px;
+}
+.section_features_item_text span{     
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;    
+}
+.section_features_item_text p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;   
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/**/
+.section_work{
+    margin: 94px 13% 94px 13%;
+    width: 74%;  
+    display: flex;   
+    flex-direction: column;   
+}
+.section_work_span{  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.section_work_imgbox{
+    margin-top: 50px;
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section_work_img{
+    position: relative;
+    width: 32%;  
+}
+.section_work_img img{
+    width: 100%; 
+}
+.section_work_img_lable{
+    position: absolute;
+    height: 24%;
+    max-height: 70px;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    background-color: #212121;
+    opacity: 0.8;
+    /*align-items: center;  */
+   /* vertical-align: middle;*/   
+}
+.section_work_img_lable a{    
+    text-decoration: none;   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.section_work_img_lable p{
+    margin-top: 8%;
+}
+
+/**/
+.section_team{
+    width: 100%;
+    background: #F5F4FA;
+    display: flex;   
+    flex-direction: column; 
+}
+.section_team_span{  
+    margin-top: 94px;  
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.section_team_box{
+    margin: 50px 13% 0 13%;
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section_team_box_card{
+    width: 23%;
+    text-align: center; 
+    background: #FFFFFF;
+    margin-bottom: 94px;
+}
+.section_team_box_card_img{
+    width: 100%;
+}
+.section_team_box_card_name{
+    margin-top:30px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.section_team_box_card_profesion{
+    margin-top:10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px; 
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.section_team_box_car_nav{
+    margin-bottom: 30px;
+}
+.section_team_box_car_nav li{   
+    display: inline-block;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px; 
+}
+.section_team_box_car_nav a{  
+   display: block;
+   width: 44px;
+   height: 44px;
+   border-radius: 22px;   
+}
+.instagram{
+    background:url(E:/programming/goIt/webstudio/icons/Ellipse1.png) no-repeat center;
+}
+.instagram:hover{
+    background:url(E:/programming/goIt/webstudio/icons/EllipseI.png) no-repeat center;
+}
+.twitter{
+    background:url(E:/programming/goIt/webstudio/icons/Ellipse2.png) no-repeat center;
+}
+.twitter:hover{
+    background:url(E:/programming/goIt/webstudio/icons/EllipseT.png) no-repeat center;
+}
+.facebook{
+    background:url(E:/programming/goIt/webstudio/icons/Ellipse3.png) no-repeat center;
+}
+.facebook:hover{
+    background:url(E:/programming/goIt/webstudio/icons/EllipseF.png) no-repeat center;
+}
+.linkedin{
+    background:url(E:/programming/goIt/webstudio/icons/Ellipse4.png) no-repeat center;
+}
+.linkedin:hover{
+    background:url(E:/programming/goIt/webstudio/icons/EllipseL.png) no-repeat center;
+}
+
+/**/
+.section_customers {
+    width: 100%;
+    display: flex;   
+    flex-direction: column; 
+}
+.section_customers span {
+    margin-top: 94px;    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.section_customers_box{
+    margin: 50px 13% 94px 13%;   
+}
+.section_customers_box_customer{
+   display: flex;   
+   flex-direction: row;
+   justify-content: space-between;    
+}
+.section_customers_box_customer li{     
+   width: 14.5%;    
+    display: flex;   
+    flex-direction: row;
+    justify-content: center;
+   /* border: 1px solid #AFB1B8;
+    border-radius: 4px;*/
+}
+.section_customers_box_customer a{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.first_custome{
+    background:url(E:/programming/goIt/webstudio/icons/Logo1.png) no-repeat center;    
+}
+.first_custome:hover{
+    background:url(E:/programming/goIt/webstudio/icons/ClientH1.png) no-repeat center;
+    border-color:  #2196F3;
+}
+.second_custome{
+    background:url(E:/programming/goIt/webstudio/icons/Logo2.png) no-repeat center;
+}
+.second_custome:hover{
+    background:url(E:/programming/goIt/webstudio/icons/ClientH2.png) no-repeat center;
+    border-color: #2196F3;
+}
+.third_custome{
+    background:url(E:/programming/goIt/webstudio/icons/Logo3.png) no-repeat center;    
+}
+.third_custome:hover{
+    background:url(E:/programming/goIt/webstudio/icons/ClientH3.png) no-repeat center;
+    border-color: #2196F3;
+}
+.fourth_custome{
+    background:url(E:/programming/goIt/webstudio/icons/Logo4.png) no-repeat center;
+    border-color:  #2196F3;
+}
+.fourth_custome:hover{
+    background:url(E:/programming/goIt/webstudio/icons/ClientH4.png) no-repeat center;
+    border-color: #2196F3;
+}
+.fifth_custome{
+    background:url(E:/programming/goIt/webstudio/icons/Logo5.png) no-repeat center;
+}
+.fifth_custome:hover{
+    background:url(E:/programming/goIt/webstudio/icons/ClientH5.png) no-repeat center;
+    border-color: #2196F3;
+}
+.sixth_custome{
+    background:url(E:/programming/goIt/webstudio/icons/Logo6.png) no-repeat center;
+}
+.sixth_custome:hover{
+    background:url(E:/programming/goIt/webstudio/icons/ClientH6.png) no-repeat center;
+    border-color: #2196F3;
+}
+.section_customers_box_customer li a { 
+    width: 100%;
+    height: 92px;
+}
+
+@media (max-width: 1200px) {
+    .section_features {
+        margin: 94px 6% 0 6%;
+        width: 88%;
+    }
+    .section_work{
+        margin: 94px 6%;
+        width: 88%;        
+    }
+    .section_team_box{
+        margin: 50px 6% 0 6%;
+    }
+    .section_customers_box{
+        margin: 50px 6% 94px 6%;   
+    }
+}
+@media (max-width: 1000px) {
+    .section_features {
+        margin: 94px 2% 0 2%;
+        width: 96%;
+    }    
+    .section_work {
+        margin: 94px 2%;
+        width: 96%;
+    }    
+    .section_team_box {
+        margin: 50px 2% 0 2%;
+    }    
+    .section_customers_box {
+        margin: 50px 2% 94px 2%;
+    }
+}
+@media (max-width: 768px) {
+   .section_servise_span{
+        width: 400px;                
+        font-size: 26px;
+        line-height: 42px;
+        bottom: 49.5%;
+    }
+    .section_servise_button{        
+        bottom: 29.5%;
+        width: 200px;
+        height: 50px;      
+    }
+    .section_features{
+        margin: 60px 2% 0 2%;
+        width: 96%;       
+        flex-wrap: wrap;        
+    }
+    .section_features_item{
+        width: 49%;
+    }
+    .section_features_item:nth-child(n+3) {
+        margin-bottom: 60px;
+    }
+    .section_work{
+        display: none; 
+    }    
+    .section_team_span{  
+        margin-top: 60px;         
+        font-size: 28px;
+        line-height: 33px; 
+    }
+    .section_team_box{
+        margin: 30px 2% 0 2%;
+        flex-wrap: wrap;
+    }
+    .section_team_box_card{
+        width: 49%;       
+        margin-bottom: 30px;
+    }
+    .section_team_box_card:nth-child(n+3) {              
+        margin-bottom: 60px;
+    }
+    .section_team_box_car_nav{
+        margin-bottom: 24px;
+    }
+    .section_customers span {
+        margin-top: 60px; 
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .section_customers_box{
+        margin: 30px 2% 30px 2%;   
+    }
+    .section_customers_box_customer{
+        flex-wrap: wrap;
+    }
+    .section_customers_box_customer li{       
+        width: calc((100% - 2*30px)/3);
+        margin-bottom: 30px;           
+    }
+}
+
+@media (max-width: 480px) {
+    .section_features {
+        margin: 60px 3% 0 3%;
+        width: 94%;
+        flex-direction: column;
+    }
+    .section_features_item {
+        width: 100%;
+    }
+ 
+    .section_features_item_text{     
+    text-align: center;
+    }
+    .section_features_item_text p{
+        margin: 10px 0 30px 0;
+        text-align: left;
+    }
+    .section_features_item:nth-child(n+3) {
+        margin-bottom: 0px;
+    }
+    .section_team_box{
+        margin: 30px 3% 0 3%;        
+    }
+    .section_team_box_card{
+        width: 100%;       
+        margin-bottom: 30px;
+    }
+    .section_team_box_card:nth-child(n+3) {              
+        margin-bottom: 30px;
+    }
+    .section_customers_box{
+        margin: 30px 3% 30px 3%;   
+    }
+    .section_customers_box_customer li{          
+        width: calc((100% - 30px)/2);
+        margin-bottom: 30px;           
+    }
+
+}
+
+@media (max-width: 420px) {
+    .section_servise_span {
+        width: 80%;
+        font-size: 18px;
+        line-height: 36px;           
+    }
+}

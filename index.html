@@ -5,33 +5,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
     <title>desktop_petstory</title>
-    <link rel="stylesheet" href="wb/main/style/style.css" />
-    <link rel="stylesheet" href="wb/main/style/media.css" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header/header.css" />
+    <link rel="stylesheet" href="index/style.css" /> 
+    <link rel="stylesheet" href="footer/footer.css" />
+    <link rel="stylesheet" href="modal/modal.css" /> 
 </head>
 
 <body>
     <section class="top_section" >
         <header>
-            <div class="header_logo">
-                <h1><a href="#"><span class="header_logo_h1_span">Web</span>Studio</a></h1>
-            </div>
-            <div class="header_menu">
-                <nav class="header_menu_nav">
-                    <a href="">Студія</a>
-                    <a href="">Портфоліо</a>
+            <div class="header_centre">
+                <div class="header_logo">
+                    <h1><a href="#"><span class="header_logo_h1_span">Web</span>Studio</a></h1>
+                </div>
+                <nav class="header_menu_nav" id="menu_nav">
+                    <a id="studio" href="#">Студія</a>
+                    <a id="portfolio" href="porfolio.html">Портфоліо</a>
                     <a href="">Контакти</a>
                 </nav>
-            </div>
-            <div class="header_contacs">
                 <nav class="header_contacs_nav">
-                    <a class="header_mail" href="mailto:">info@devstudio.com</a>
-                    <a class="header_telephone" href="tel:">+38 096 111 11 11</a>
+                    <a id="header_mailto" class="header_mail" href=""> <img id="header_mail_img" src="icons/envelope.png"
+                            alt="info@devstudio.com"> info@devstudio.com</a>
+                    <a id="header_phone" class="header_telephone" href="tel:"> <img id="header_phone_img"
+                            src="icons/smartphone.png" alt="+38 096 111 11 11"> +38 096 111 11 11</a>
                 </nav>
+            </div>
+            <div class="burger-menu">
+                <input id="burger_toggle" type="checkbox" />
+                <label class="burger_btn" for="burger_toggle">
+                    <span></span>
+                </label>
+                <ul class="burger_box" id="burgerBox">
+                    <nav class="burger_menu_nav" id="menu_nav">
+                        <a id="studio" href="#">Студія</a>
+                        <a id="portfolio" href="portfolio/porfolio.html">Портфоліо</a>
+                        <a href="">Контакти</a>
+                    </nav>
+                    <nav class="burger_contacs_nav">
+                        <a id="header_phone" class="header_telephone" href="tel:"> +38 096 111 11 11</a>
+                        <a id="burger_mailto" class="header_mail" href=""> info@devstudio.com</a>
+                    </nav>
+                    <nav class="burger_social_nav">
+                        <li><a class="burger_instagram" href="https://www.instagram.com/">instagram</a></li>
+                        <hr>
+                        <li><a class="burger_twitter" href="https://twitter.com/">twitter</a></li>
+                        <hr>
+                        <li><a class="burger_facebook" href="https://www.facebook.com/">facebook</a></li>
+                        <hr>
+                        <li><a class="burger_linkedin" href="https://www.linkedin.com/">linkedin</a></li>
+                    </nav>
+                </ul>
             </div>
         </header>
 
-        <section class="section_servise">
-            <img src="wb/main/image/Img.png " alt="Ефективні рішення для вашого бізнесу">
+       <section class="section_servise">
+            <img id="section_servise_img" src="image/Img.png " alt="Ефективні рішення для вашого бізнесу">
             <span class="section_servise_span">Ефективні рішення для вашого бізнесу</span>
             <button class="section_servise_button">Замовити послугу</button>
         </section>
@@ -39,7 +71,7 @@
         <section class="section_features">
             <div class="section_features_item">
                 <div class="section_features_item_icon">
-                    <img src="wb/main/icons/antenna 1.png" alt="">
+                    <a href=""> <img src="icons/antenna 1.png" alt=""></a>
                 </div>
                 <div class="section_features_item_text">
                     <span>УВАГА ДО ДЕТАЛЕЙ</span>
@@ -48,7 +80,7 @@
             </div>
             <div class="section_features_item">
                 <div class="section_features_item_icon">
-                    <img src="wb/main/icons/clock 1.png" alt="">
+                   <a href=""> <img src="icons/clock 1.png" alt=""></a>
                 </div>
                 <div class="section_features_item_text">
                     <span>ПУНКТУАЛЬНІСТЬ</span>
@@ -57,7 +89,7 @@
             </div>
             <div class="section_features_item">
                 <div class="section_features_item_icon">
-                    <img src="wb/main/icons/diagram 1.png" alt="">
+                    <a href=""><img src="icons/diagram 1.png" alt=""></a>
                 </div>
                 <div class="section_features_item_text">
                     <span>ПЛАНУВАННЯ</span>
@@ -66,7 +98,7 @@
             </div>
             <div class="section_features_item">
                 <div class="section_features_item_icon">
-                    <img src="wb/main/icons/astronaut 1.png" alt="">
+                    <a href=""><img src="icons/astronaut 1.png" alt=""></a>
                 </div>
                 <div class="section_features_item_text">
                     <span>СУЧАСНІ ТЕХНОЛОГІЇ</span>
@@ -75,19 +107,19 @@
             </div>
         </section>
         
-        <section class="section_work">
+     <section class="section_work">
             <span class="section_work_span">Чим ми займаємося</span>
             <div class="section_work_imgbox">
                 <div class="section_work_img">
-                    <img src="wb/main/image/box 1.png" alt="декстопні додатки">  
+                    <img src="image/box 1.png" alt="декстопні додатки">  
                     <div class="section_work_img_lable"><a href="#"><p>Декстопні додатки</p></a></div>              
                 </div>
                 <div class="section_work_img">
-                    <img src="wb/main/image/box 2.png" alt="мобільні додатки">
+                    <img src="image/box 2.png" alt="мобільні додатки">
                     <div class="section_work_img_lable"><a href="#"><p>Мобільні додатки</p></a></div>               
                 </div>
                 <div class="section_work_img">
-                    <img src="wb/main/image/box 3.png" alt="дизайнерські рішення">
+                    <img src="image/box 3.png" alt="дизайнерські рішення">
                     <div span class="section_work_img_lable"><a href="#"><p>Дизайнерські рішення</p></a></div>             
                 </div>
             </div>
@@ -97,7 +129,7 @@
             <span class="section_team_span">Наша команда</span>
             <div class="section_team_box">
                 <div class="section_team_box_card">
-                    <img class="section_team_box_card_img" src="wb/main/image/img1.jpg " alt="produser">
+                    <img class="section_team_box_card_img" src="image/team1.jpg " alt="produser">
                     <p class="section_team_box_card_name">Ігор Дем'яненко</p> 
                     <p class="section_team_box_card_profesion">Produser designer</p>
                     <nav class="section_team_box_car_nav">
@@ -108,7 +140,7 @@
                     </nav>
                 </div>
                 <div class="section_team_box_card">
-                    <img class="section_team_box_card_img" src="wb/main/image/img2.jpg " alt="developer">
+                    <img class="section_team_box_card_img" src="image/team2.jpg " alt="developer">
                     <p class="section_team_box_card_name">Ольга Рєпіна</p> 
                     <p class="section_team_box_card_profesion">Frontend developer</p>
                     <nav class="section_team_box_car_nav">
@@ -119,7 +151,7 @@
                     </nav>
                 </div>
                 <div class="section_team_box_card">
-                    <img class="section_team_box_card_img" src="wb/main/image/img3.jpg " alt="marketing">
+                    <img class="section_team_box_card_img" src="image/team3.jpg " alt="marketing">
                     <p class="section_team_box_card_name">Микола Тарасов</p> 
                     <p class="section_team_box_card_profesion">Marketing</p>
                     <nav class="section_team_box_car_nav">
@@ -130,7 +162,7 @@
                     </nav>
                 </div>
                 <div class="section_team_box_card">
-                    <img class="section_team_box_card_img" src="wb/main/image/img4.jpg " alt="UI designer">
+                    <img class="section_team_box_card_img" src="image/team4.jpg " alt="UI designer">
                     <p class="section_team_box_card_name">Михайло Єрмаков</p> 
                     <p class="section_team_box_card_profesion">UI designer</p>
                     <nav class="section_team_box_car_nav">
@@ -143,7 +175,7 @@
             </div>
         </section>
 
-        <section class="section_customers" >
+       <section class="section_customers" >
             <span>Постійні клієнти</span>
             <div class="section_customers_box">
                 <nav class="section_customers_box_customer">
@@ -154,15 +186,17 @@
                     <li><a  class="fifth_custome" href=""></a></li>
                     <li><a class="sixth_custome" href=""></a></li>
                 </nav>
-            </div>
+            </div>  
         </section>
 
         <footer>
             <div class="foter_top">
-                <div class="fooer_left">
+                <div class="header_logo">
                     <h1><a href="#"><span class="header_logo_h1_span">Web</span>Studio</a></h1>
                     <ul class="footer_adress">
-                        <li><p>м. Київ, пр-т Лесі Українки, 26</p></li>
+                        <li>
+                            <p>м. Київ, пр-т Лесі Українки, 26</p>
+                        </li>
                         <li><a class="telephone" href="tel:">+38 096 111 11 11</a></li>
                         <li><a class="mail" href="mailto:">info@devstudio.com</a></li>
                     </ul>
@@ -170,28 +204,68 @@
                 <div class="footer_center">
                     <span class="footer_center_span">приєднуйтесь</span>
                     <nav class="section_team_box_car_nav">
-                        <li><a class="instagram" href="https://www.instagram.com/"></a></li>  
-                        <li><a class="twitter" href="https://twitter.com/"></a></li>
-                        <li><a class="facebook" href="https://www.facebook.com/"></a></li>
-                        <li><a class="linkedin" href="https://www.linkedin.com/"></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/"><img id="instagram" src="icons/Ellipse1.png"
+                                    alt="instagram"></a></li>
+                        <li><a class="twitter" href="https://twitter.com/"><img id="twitter" src="icons/Ellipse2.png"
+                                    alt="twitter"></a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/"><img id="facebook" src="icons/Ellipse3.png"
+                                    alt="facebook"></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/"><img id="linkedin" src="icons/Ellipse4.png"
+                                    alt="linkedin"></a></li>
                     </nav>
                 </div>
                 <div class="footer_right">
                     <div class="footer_right_input">
-                    <p>Підпишіться на розсилку</p>
+                        <p>Підпишіться на розсилку</p>
                         <div class="footer_right_input_buttom">
                             <input type="email" id="footer_email" class="footer_inpyt" placeholder="E-mail">
-                            <button class="footer_button" id="footer_but"><div><span>Підписатися</span><img src="wb/main/icons/icon send.png" alt=""></div> </button>
+                            <button class="footer_button" id="footer_but">
+                                <div><span>Підписатися</span><img src="icons/icon send.png" alt=""></div>
+                            </button>
                         </div>
-            
+        
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> 
+
+        <div id="modalWindow"></div>
+        <form action="" id="top_form" method="post">
+            <fieldset>
+                <button id="modal_button" class="modal_button">
+                    <img id="modal_img" class="modal_button_close" src="icons/close-black-18dp (1) 1.png" width="18px" height="18px" alt="mail">
+                </button>
+                <p>Залиште свої дані, ми вам передзвонимо</p>
+                <section class="form_section" id="formSection" >
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="inputName" name="name">
+                    <img id="inputImg" class="form_name" src="icons/person-black-18dp1.png" width="18px" height="18px" alt="name">
+
+                    <label for="phone">Телефон</label>
+                    <input id="inputPhone" type="text" name="phone">
+                    <img class="form_phone" src="icons/phone-black-18dp 1.png" width="18px" height="18px" alt="phone">
+
+                    <label for="mail">Пошта</label>
+                    <input id="inputMail" type="text" name="mail"  >
+                    <img class="form_mail" src="icons/email-black-18dp 1.png" width="18px" height="18px" alt="mail">
+
+                    <label for="comment">Коментар</label>
+                    <textarea id="textareaText" type="text" name="comment" >Введіть текст</textarea>               
+                </section>
+                <div class="formCheckbox">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+                </div>
+                <button class="formButton">Відправити</button>
+            </fieldset>
+        </form> 
     </section>
 </body>
 
-<script src='wb/main/script.js'></script>
+<script src='header/header.js'></script>
+<script src='footer/footer.js'></script>
+<script src='index/script.js'></script>
+<script src='modal/modal.js'></script>
 
 
 </html>
