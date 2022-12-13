@@ -244,6 +244,9 @@
 .section_customers_box_customer a{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .first_custome:hover{  
     border-color:  #2196F3;
