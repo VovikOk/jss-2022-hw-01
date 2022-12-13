@@ -209,30 +209,6 @@
    height: 44px;
    border-radius: 22px;   
 }
-.instagram{
-    background:url(E:/programming/goIt/webstudio/icons/Ellipse1.png) no-repeat center;
-}
-.instagram:hover{
-    background:url(E:/programming/goIt/webstudio/icons/EllipseI.png) no-repeat center;
-}
-.twitter{
-    background:url(E:/programming/goIt/webstudio/icons/Ellipse2.png) no-repeat center;
-}
-.twitter:hover{
-    background:url(E:/programming/goIt/webstudio/icons/EllipseT.png) no-repeat center;
-}
-.facebook{
-    background:url(E:/programming/goIt/webstudio/icons/Ellipse3.png) no-repeat center;
-}
-.facebook:hover{
-    background:url(E:/programming/goIt/webstudio/icons/EllipseF.png) no-repeat center;
-}
-.linkedin{
-    background:url(E:/programming/goIt/webstudio/icons/Ellipse4.png) no-repeat center;
-}
-.linkedin:hover{
-    background:url(E:/programming/goIt/webstudio/icons/EllipseL.png) no-repeat center;
-}
 
 /**/
 .section_customers {
@@ -269,47 +245,22 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.first_custome{
-    background:url(E:/programming/goIt/webstudio/icons/Logo1.png) no-repeat center;    
-}
-.first_custome:hover{
-    background:url(E:/programming/goIt/webstudio/icons/ClientH1.png) no-repeat center;
+.first_custome:hover{  
     border-color:  #2196F3;
-}
-.second_custome{
-    background:url(E:/programming/goIt/webstudio/icons/Logo2.png) no-repeat center;
 }
 .second_custome:hover{
-    background:url(E:/programming/goIt/webstudio/icons/ClientH2.png) no-repeat center;
     border-color: #2196F3;
 }
-.third_custome{
-    background:url(E:/programming/goIt/webstudio/icons/Logo3.png) no-repeat center;    
-}
-.third_custome:hover{
-    background:url(E:/programming/goIt/webstudio/icons/ClientH3.png) no-repeat center;
+.third_custome:hover{ 
     border-color: #2196F3;
-}
-.fourth_custome{
-    background:url(E:/programming/goIt/webstudio/icons/Logo4.png) no-repeat center;
-    border-color:  #2196F3;
 }
 .fourth_custome:hover{
-    background:url(E:/programming/goIt/webstudio/icons/ClientH4.png) no-repeat center;
     border-color: #2196F3;
 }
-.fifth_custome{
-    background:url(E:/programming/goIt/webstudio/icons/Logo5.png) no-repeat center;
-}
-.fifth_custome:hover{
-    background:url(E:/programming/goIt/webstudio/icons/ClientH5.png) no-repeat center;
+.fifth_custome:hover{  
     border-color: #2196F3;
-}
-.sixth_custome{
-    background:url(E:/programming/goIt/webstudio/icons/Logo6.png) no-repeat center;
 }
 .sixth_custome:hover{
-    background:url(E:/programming/goIt/webstudio/icons/ClientH6.png) no-repeat center;
     border-color: #2196F3;
 }
 .section_customers_box_customer li a { 
