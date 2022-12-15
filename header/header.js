@@ -4,12 +4,12 @@
 //підсвічуємо вкладку активної сторінки
 let adress = document.location.href;
 
-if (adress === 'file:///E:/programming/goIt/webstudio/porfolio.html') {
+if (adress === 'https://vovikok.github.io/jss-2022-hw-01/porfolio.html') {
     let portfolio = document.getElementById("portfolio");
   portfolio.classList.add('active');
 };
 
-if (adress === 'file:///E:/programming/goIt/webstudio/index.html') {
+if (adress === 'https://vovikok.github.io/jss-2022-hw-01/index.html') {
     let studio = document.getElementById("studio");
   studio.classList.add('active');
 };
