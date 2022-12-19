@@ -33,7 +33,7 @@ document.getElementById("inputName").addEventListener('click', (event) => {
      event.target.style.borderColor = '#2196F3'; 
 });
 document.getElementById("inputName").addEventListener('blur', (event) => {
-     event.target.nextElementSibling.src = 'icons/person-black-18dp1.png';
+     event.target.nextElementSibling.src = 'icons/person-black-18dp 1.png';
      event.target.style.borderColor = 'black';  
 });
 
