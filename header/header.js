@@ -4,12 +4,12 @@
 //підсвічуємо вкладку активної сторінки
 let adress = document.location.href;
 
-if (adress === 'https://vovikok.github.io/jss-2022-hw-01/porfolio.html' || adress ==='https://vovikok.github.io/jss-2022-hw-01/')
+if (adress === 'https://vovikok.github.io/jss-2022-hw-01/porfolio.html')
     let portfolio = document.getElementById("portfolio");
   portfolio.classList.add('active');
 };
 
-if (adress === 'https://vovikok.github.io/jss-2022-hw-01/index.html') {
+if (adress === 'https://vovikok.github.io/jss-2022-hw-01/index.html'  || adress ==='https://vovikok.github.io/jss-2022-hw-01/') {
     let studio = document.getElementById("studio");
   studio.classList.add('active');
 };
