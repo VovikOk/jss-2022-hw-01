@@ -4,7 +4,7 @@
 //підсвічуємо вкладку активної сторінки
 let adress = document.location.href;
 
-if (adress === 'https://vovikok.github.io/jss-2022-hw-01/porfolio.html') {
+if (adress === 'https://vovikok.github.io/jss-2022-hw-01/porfolio.html' || adress ==='https://vovikok.github.io/jss-2022-hw-01/')
     let portfolio = document.getElementById("portfolio");
   portfolio.classList.add('active');
 };
